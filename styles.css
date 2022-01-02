@@ -1,0 +1,40 @@
+:root {
+    --gray: #766F68;
+    --orange: #D2872C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 80vw;
+    margin: 0 auto;
+    color: var(--gray);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+ul li a {
+    font-size: 25px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--gray)
+}
+
+h1 {
+    color: var(--orange)
+}
