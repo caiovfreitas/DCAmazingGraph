@@ -12,14 +12,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     width: 80vw;
-    margin: 0 auto;
     color: var(--gray);
+    margin: 100px auto;
 }
 
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1px;
 }
 
 ul {
@@ -38,3 +39,86 @@ ul li a {
 h1 {
     color: var(--orange)
 }
+
+.container {
+    padding: 50px;
+    position: relative;
+}
+
+.container img {
+    width: 60vw;
+    margin-left: 17rem;
+}
+
+.content {
+    width: 450px;
+    position: absolute;
+    top: 40px;
+}
+
+.content h2 {
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--gray);
+}
+
+.content p {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 400px;
+}
+
+.content button {
+    margin-top: 40px;
+    border-radius: 0.7rem;
+    border: none;
+    font-size: 1.4rem;
+    padding: 15px 80px;
+    background-color: #D2872C;
+    color: white;
+}
+
+.content button:hover {
+    transition: 1s;
+    outline: none;
+    background-color: #D2872C;
+}
+.content button:not(:hover) {
+    transition: 1s;
+    background-color: #D2872C;
+}
+
+@media screen and (max-width: 900px) {
+    ul {
+        display: none;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container img {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .content {
+       position: static;
+       display: inline;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+        margin-top: 2rem;
+        width: auto;
+    }
+
+    .content button {
+        margin-top: 2rem;
+    }
+  }
